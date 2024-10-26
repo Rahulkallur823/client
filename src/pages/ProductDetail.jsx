@@ -3,7 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import Layout from "../components/Layouts/Layout";
 import { FaStar, FaShoppingCart } from 'react-icons/fa';
 import { useCart } from "../store/UseCart";
-import { toast } from "react-toastify";
+
+import { toast } from 'react-hot-toast';
+
 import LazyLoad from 'react-lazy-load';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ProductDetails.css"

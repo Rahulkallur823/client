@@ -6,7 +6,7 @@ const useCategory = () => {
 
   const getAllCategory = async () => {
     try {
-      const response = await fetch('http://localhost:7000/api/v1/category/get-category/');
+      const response = await fetch('https://food-5mu1.onrender.com/v1/category/get-category/');
       
       if (!response.ok) {
         throw new Error('Failed to fetch categories');

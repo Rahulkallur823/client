@@ -23,7 +23,7 @@ const CategoryProduct = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:7000/api/v1/product/product-category/${params.slug}?page=${page}&limit=${itemsPerPage}`
+        `https://food-5mu1.onrender.com/api/v1/product/product-category/${params.slug}?page=${page}&limit=${itemsPerPage}`
       );
       const data = await response.json();
       setCategory(data?.category);

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../store/Auth';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 import { Modal, Button, Form, Table, Card, Container, Row, Col } from 'react-bootstrap';
 import { Edit, Delete, Add, CloudUpload } from '@mui/icons-material';
 import Skeleton from 'react-loading-skeleton';

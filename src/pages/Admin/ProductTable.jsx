@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Star } from 'lucide-react';
 import { Container, Row, Col, Table, Badge, Image } from 'react-bootstrap';
 
+
 const ProductTable = () => {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);

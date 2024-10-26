@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+
+import { toast } from 'react-hot-toast';
+
+
 import { useAuth } from "../../store/Auth";
 import useCategory from '../../hooks/useCategory';
 import { FaBox, FaRupeeSign, FaPercent, FaStar, FaTruck, FaUpload, FaTrashAlt } from 'react-icons/fa';

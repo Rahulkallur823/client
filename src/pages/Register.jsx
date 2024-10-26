@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/Auth';
 import { FaUser, FaEnvelope, FaPhone, FaLock, FaMapMarkerAlt, FaShieldAlt } from 'react-icons/fa';
 import Layout from '../components/Layouts/Layout';
+import { toast } from 'react-hot-toast';
+
 
 const Register = () => {
   const navigate = useNavigate();
@@ -29,6 +31,7 @@ const Register = () => {
       if (response.ok) {
         const responseData = await response.json();
         alert('Registration successful');
+        toast.success("registraion successfull")
         storeTokenInLS(responseData.token);
         setUser({ name: '', email: '', phone: '', password: '', address: '', answer: '' });
         navigate('/login');

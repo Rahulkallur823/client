@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/Auth';
-import { toast } from 'react-toastify';
+
+import { toast } from 'react-hot-toast';
+
 import Layout from '../components/Layouts/Layout';
 import { Spinner } from 'react-bootstrap';
 
