@@ -1,0 +1,88 @@
+/* Footer.css */
+.footer {
+    font-family: 'Okra', Helvetica, sans-serif;
+    color: #1C1C1C;
+  }
+  
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-heading {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+    color: #1C1C1C;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer ul li a {
+    color: #696969;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #1C1C1C;
+  }
+  
+  .social-links a {
+    color: #1C1C1C;
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #EF4F5F;
+  }
+  
+  .footer .container {
+    max-width: 1100px;
+  }
+  
+  /* Language and Country Selector */
+  .footer-selector {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    color: #1C1C1C;
+    font-size: 14px;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .footer-selector img {
+    margin-right: 8px;
+    width: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 2rem 0;
+    }
+    
+    .social-links {
+      margin-bottom: 1rem;
+    }
+    
+    .footer-heading {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  /* App store buttons hover effect */
+  .footer a img {
+    transition: transform 0.2s ease;
+  }
+  
+  .footer a img:hover {
+    transform: scale(1.05);
+  }

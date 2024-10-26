@@ -1,0 +1,168 @@
+/* searchproduct.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 calc(33.333% - 1rem);
+  margin-bottom: 1rem;
+}
+
+.rpc-product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpc-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.rpc-image-gallery {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+.rpc-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.rpc-image-gallery:hover .rpc-image {
+  transform: scale(1.05);
+}
+
+.no-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.rpc-discount-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.rpc-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rpc-product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.rpc-price-container {
+  margin-bottom: 0.5rem;
+}
+
+.rpc-discounted-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #e53935;
+}
+
+.rpc-original-price {
+  font-size: 0.875rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 0.25rem;
+}
+
+.rpc-rating {
+  margin-bottom: 0.5rem;
+}
+
+.rpc-star {
+  color: #ffd700;
+  font-size: 1.125rem;
+}
+
+.rpc-star.filled {
+  color: #ffc107;
+}
+
+.rpc-stock-info {
+  font-size: 0.875rem;
+  color: #4caf50;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.no-products {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Media Queries for Laptop Screens */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .product-link {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 1023px) {
+  .product-link {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 767px) {
+  .product-link {
+    flex: 1 1 calc(100% - 1rem);
+  }
+}
